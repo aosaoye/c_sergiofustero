@@ -1,4 +1,6 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# c_sergiofustero
+
+Sitio web para **Sergio Fustero** (fontanería y reformas), desarrollado con Next.js App Router, Tailwind CSS, GSAP, Three.js y Lucide Icons.
 
 ## Getting Started
 
