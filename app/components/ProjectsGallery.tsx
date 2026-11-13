@@ -10,6 +10,7 @@ import {
   X,
 } from "lucide-react";
 import { PROJECTS, type ProjectItem } from "@/app/data/plumbing-data";
+import { assetPath } from "@/app/lib/assets";
 import { getGsap, prefersReducedMotion } from "@/app/lib/gsap-setup";
 
 /**
@@ -233,7 +234,7 @@ export function ProjectsGallery() {
                 className="relative block h-full min-h-[360px] w-full cursor-zoom-in text-left sm:min-h-[440px] lg:min-h-[480px]"
               >
                 <Image
-                  src={project.imageSrc}
+                  src={assetPath(project.imageSrc)}
                   alt={project.imageAlt}
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
@@ -322,7 +323,7 @@ export function ProjectsGallery() {
 
             <div className="relative aspect-[4/3] w-full bg-zinc-100 dark:bg-zinc-900">
               <Image
-                src={activeLightboxProject.imageSrc}
+                src={assetPath(activeLightboxProject.imageSrc)}
                 alt={activeLightboxProject.imageAlt}
                 fill
                 sizes="(max-width: 1024px) 100vw, 896px"

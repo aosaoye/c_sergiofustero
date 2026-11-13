@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react";
 import Image from "next/image";
 import { Phone } from "lucide-react";
 import { CLIENT_INFO } from "@/app/data/plumbing-data";
+import { assetPath } from "@/app/lib/assets";
 import { getGsap, prefersReducedMotion } from "@/app/lib/gsap-setup";
 
 /**
@@ -43,7 +44,7 @@ export function ProjectBannerCta() {
       className="relative flex min-h-[420px] w-full items-center justify-center overflow-hidden border-b border-black/[.06] py-20 dark:border-white/[.08] sm:min-h-[500px]"
     >
       <Image
-        src="/images/project-ducha.jpg"
+        src={assetPath("/images/project-ducha.jpg")}
         alt="Reforma minimalista de ducha y baño completada"
         fill
         sizes="100vw"

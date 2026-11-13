@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react";
 import Image from "next/image";
 import { Clock, MessageCircle, Phone, Star } from "lucide-react";
 import { CLIENT_INFO } from "@/app/data/plumbing-data";
+import { assetPath } from "@/app/lib/assets";
 import { getGsap, prefersReducedMotion } from "@/app/lib/gsap-setup";
 import { SignaturePillButton } from "@/app/components/SignaturePillButton";
 
@@ -54,7 +55,7 @@ export function ContactSplitSection() {
           className="relative flex min-h-[360px] flex-col items-center justify-center overflow-hidden border-b border-black/[.06] px-8 py-16 text-center dark:border-white/[.08] md:min-h-[440px] md:border-b-0 md:border-r"
         >
           <Image
-            src="/images/project-colector.jpg"
+            src={assetPath("/images/project-colector.jpg")}
             alt="Instalación técnica de fontanería con colector y tuberías de cobre"
             fill
             sizes="(max-width: 768px) 100vw, 50vw"

@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react";
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import { CLIENT_INFO } from "@/app/data/plumbing-data";
+import { assetPath } from "@/app/lib/assets";
 import { getGsap, prefersReducedMotion } from "@/app/lib/gsap-setup";
 
 /**
@@ -105,7 +106,7 @@ export function EditorialSplitShowcase() {
           className="relative flex min-h-[380px] items-center overflow-hidden border-t border-black/[.06] dark:border-white/[.08] sm:min-h-[440px]"
         >
           <Image
-            src="/images/project-griferia.jpg"
+            src={assetPath("/images/project-griferia.jpg")}
             alt="Instalación limpia de grifería y fregadero en cocina moderna"
             fill
             sizes="(max-width: 768px) 100vw, 50vw"
@@ -132,7 +133,7 @@ export function EditorialSplitShowcase() {
           className="relative min-h-[360px] overflow-hidden border-t border-black/[.06] dark:border-white/[.08] sm:min-h-[440px]"
         >
           <Image
-            src="/images/project-bano.jpg"
+            src={assetPath("/images/project-bano.jpg")}
             alt="Lavabo suspendido con grifería mural empotrada tras reforma de baño"
             fill
             sizes="(max-width: 768px) 100vw, 50vw"
